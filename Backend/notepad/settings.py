@@ -64,7 +64,7 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:5173',
 ]
 
-ROOT_URLCONF = 'config.urls'
+ROOT_URLCONF = 'notepad.urls'
 
 TEMPLATES = [
     {
@@ -106,7 +106,7 @@ SPECTACULAR_SETTINGS = {
     'SERVE_INCLUDE_SCHEMA': False,
 }
 
-WSGI_APPLICATION = 'config.wsgi.application'
+WSGI_APPLICATION = 'notepad.wsgi.application'
 
 
 # Database
