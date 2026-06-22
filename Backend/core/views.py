@@ -6,17 +6,12 @@ from .serializers import (
     NotaSerializer
 )
 
-"""from .filters import (
-    FiltroPet, FiltroEstado, FiltroCidade, FiltroEndereco,
-    FiltroFuncionario, FiltroCliente
-)"""
-
-
+from .filters import FiltroNota
 class NotaViewSet(viewsets.ModelViewSet):
     queryset = Nota.objects.all()
     serializer_class = NotaSerializer
-    filter_backends = [DjangoFilterBackend, filters.OrderingFilter]
-   # filterset_class = FiltroNota
+    filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
+    filterset_class = FiltroNota
     ordering_fields = ['titulo', 'conteudo', 'data_criacao']
     ordering = ['titulo']
     search_fields = ['titulo', 'conteudo']
