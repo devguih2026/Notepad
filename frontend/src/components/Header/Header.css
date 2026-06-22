@@ -1,0 +1,41 @@
+/* Header.css */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1e1e2e;
+    padding: 16px 28px;
+    border-bottom: 2px solid #6c63ff;
+}
+
+.header-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+.header-search {
+    background-color: #2a2a3e;
+    color: #a0a0b0;
+    border: 1px solid #3a3a5e;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    width: 260px;
+}
+
+.header-new {
+    background-color: #6c63ff;
+    color: #ffffff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.header-new:hover {
+    background-color: #574fd6;
+}
