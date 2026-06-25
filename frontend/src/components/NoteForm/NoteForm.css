@@ -1,0 +1,85 @@
+/* NoteForm.css */
+
+.noteform {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 28px;
+    background-color: #12122a;
+    gap: 16px;
+}
+
+.noteform-titulo {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #3a3a5e;
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 8px 0;
+    outline: none;
+}
+
+.noteform-titulo::placeholder {
+    color: #3a3a5e;
+}
+
+.noteform-titulo:focus {
+    border-bottom-color: #6c63ff;
+}
+
+.noteform-conteudo {
+    background-color: transparent;
+    border: none;
+    color: #a0a0b0;
+    font-size: 1rem;
+    line-height: 1.7;
+    resize: none;
+    outline: none;
+    flex: 1;
+    padding: 8px 0;
+    font-family: inherit;
+}
+
+.noteform-conteudo::placeholder {
+    color: #3a3a5e;
+}
+
+.noteform-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.noteform-save {
+    background-color: #6c63ff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 28px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.noteform-save:hover {
+    background-color: #574fd6;
+}
+
+.noteform-delete {
+    background-color: transparent;
+    color: #ff6b6b;
+    border: 1px solid #ff6b6b;
+    padding: 10px 28px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.noteform-delete:hover {
+    background-color: #ff6b6b;
+    color: #ffffff;
+}
