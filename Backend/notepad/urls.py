@@ -22,7 +22,7 @@ from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from drf_spectacular.views import SpectacularAPIView, SpectacularRedocView, SpectacularSwaggerView
 
 router = DefaultRouter()
-router.register(r'nota', views.NotaViewSet, basename='notas') 
+router.register(r'nota', views.NotaViewSet, basename='nota') 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
