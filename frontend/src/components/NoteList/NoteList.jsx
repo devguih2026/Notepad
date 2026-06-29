@@ -1,10 +1,16 @@
+import { useState, useEffect } from 'react'
+import { buscarNotas } from '../../services/notaService'
+
 import './NoteList.css'
 
 function NoteList() {
-    const notas = [
-        { id: 1, titulo: "Nota 1", conteudo: "Conteúdo da nota 1" },
-        { id: 2, titulo: "Nota 2", conteudo: "Conteúdo da nota 2" },
-    ]
+    const [notas, setNotas] = useState([])
+
+    useEffect(() => {
+    buscarNotas().then(data => {
+        setNotas(data)  // saves the API response into 'notas'
+    })
+}, [])
 
     return (
         <section className="notelist">
